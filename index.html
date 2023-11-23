@@ -7,39 +7,37 @@
     <link rel="shortcut icon" href="images/title-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/smallscreen.css">
-    <script src="https://kit.fontawesome.com/a855035137.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header id="home">
+        <nav id="navbar">
+            <a href="#home"><img class="logo" src="images/logo.png" alt="ibrahim"></a>
+            <ul id="sidemenu">
+                <li><a href="#home" style="background: #00ffff; color: #333;" onclick="changeColor(this)">home</a></li>
+                <li><a href="#about" onclick="changeColor(this)">about</a></li>
+                <li><a href="#services" onclick="changeColor(this)">services</a></li>
+                <li><a href="#portfolio" onclick="changeColor(this)">portfolio</a></li>
+                <li><a href="#contact" onclick="changeColor(this)">contact</a></li>
+            </ul>
+            <i onclick="openmenu()" class='bx menu-icon bx-menu'></i>
+        </nav>
         <div class="container">
-            <nav id="navbar">
-                <a href="#home"><img class="logo" src="images/logo.png" alt="ibrahim">
-                </a>
-                <ul id="sidemenu">
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#services">services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">contact</a></li>
-                    <i onclick="closemenu()"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><style>svg{fill:#ffffff}</style><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></i>
-                </ul>
-                <i onclick="openmenu()"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#ffffff}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></i>
-            </nav>
-
             <div class="header-text">
-                <p>Graphic Designer</p>
+                <p>website & Graphic Designer</p>
                 <h1>Hi I'm <span>ibrahim</span> <br>Form Bangladesh</h1>
+                <h1>01001001 01000010 01010010 01000001 01001000 01001001 01001101</h1>
             </div>
         </div>
     </header>
 
-    <!----------about----------->
+    <!---------about----------->
 
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.jpg">
+                    <img src="images/user.jpg" alt="none">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">about me</h1>
@@ -47,8 +45,8 @@
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -66,16 +64,16 @@
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>PSC</span><br><b>School:</b> pbspb, <b>Passing year:</b> 2015, <b>gpa:</b> 3.08</li>
+                            <li><span>PSC</span><br><b>School:</b> pbspb, <b>Passing year:</b> 2015, <b>gpa:</b> 5 / 3.08</li>
                             <li><span>JSC</span><br><b>School:</b> BHS, <b>Passing year:</b> 2020, <b>gpa:</b> not found</li>
-                            <li><span>SSC</span><br><b>School:</b> BHS, <b>Passing year:</b> 2023, <b>gpa:</b> 3.82</li>
+                            <li><span>SSC</span><br><b>School:</b> BHS, <b>Passing year:</b> 2023, <b>gpa:</b> 5 / 3.82</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!----------services----------->
+    <!---------services----------->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
@@ -102,13 +100,13 @@
         </div>
     </div>
 
-<!----------portfolio----------->
+<!---------portfolio----------->
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png" >
+                    <img src="images/work-1.png" alt="none">
                     <div class="layer">
                         <h3>Graphic Design</h3>
                         <p>Click on the link to order any graphic design and you will get a special discount.</p>
@@ -116,7 +114,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png" >
+                    <img src="images/work-2.png" alt="none">
                     <div class="layer">
                         <h3>personal portfolio website.</h3>
                         <p>Visit my facebook and inbox to create personal portfolio website with HTML and CSS 60.04% off for the month of September.</p>
@@ -124,7 +122,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.png" >
+                    <img src="images/work-3.png" alt="none">
                     <div class="layer">
                         <h3>product background remove</h3>
                         <p>Remove background on any of your products at 50% discount, today visit my facebook and inbox me.</p>
@@ -136,7 +134,7 @@
         </div>
     </div>
 
-<!----------contact----------->
+<!---------contact----------->
 
     <div id="contact">
         <div class="container">
@@ -169,7 +167,8 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright &copy; Ibrahim.</p>
+            <p>2023 Copyright &copy; Ibrahim.</p>
+            <p>v 2.0</p>
         </div>
     </div>
 
