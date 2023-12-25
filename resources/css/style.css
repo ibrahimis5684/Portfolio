@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+/* resuble compunents */
+
+.btn{
+    display: block;
+    margin: 5rem auto;
+    width: fit-content;
+    border: .1rem solid #00ffff;
+    padding: 1.4rem 5rem;
+    border-radius: .6rem;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s, color 0.5s;
+    -webkit-transition: background 0.5s, color 0.5s;
+    -moz-transition: background 0.5s, color 0.5s;
+    -ms-transition: background 0.5s, color 0.5s;
+    -o-transition: background 0.5s, color 0.5s;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
+    font-size: 1.4rem;
+}
+.btn:hover{
+    background: #00ffff;
+    color: #333;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+
+.row{
+    padding: 1rem 6%;
+}
+
+h1,
+h2  {
+    font-size: 6rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 2.3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+nav .menu-icon {
+    display: none;
+}
+
+/* header section */
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    border-radius: 0 0 .5rem .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(.5rem);
+    -webkit-border-radius: 0 0 .5rem .5rem;
+    -moz-border-radius: 0 0 .5rem .5rem;
+    -ms-border-radius: 0 0 .5rem .5rem;
+    -o-border-radius: 0 0 .5rem .5rem;
+}
+
+.logo{
+    width: 6.5rem;
+    margin: 1rem 0 1rem 217%;
+}
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0 10% 0 0;
+}
+
+nav ul li{
+    margin: 0 1rem;
+    display: inline-block;
+    list-style: none;
+    margin: 1rem 2rem;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    position: relative;
+    text-transform: capitalize;
+    background: #00ffff00;
+    padding: .5rem .7rem;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: .3rem;
+    background: #00ffff;
+    position: absolute;
+    left: 0;
+    bottom: -.6rem;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+header .header-text{
+    margin-top: 20%;
+    font-size: 3rem;
+}
+
+header .header-text h1{
+    margin-top: 2rem;
+}
+
+header .header-text h1:nth-child(3) {
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: monospace;
+}
+
+header .header-text h1 span{
+    color: #00ffff;
+}
+
+nav .menu-icon {
+    display: none;
+}
+
+/*-------------about-----------*/
+
+#about{
+    padding: 8rem 0;
+    color: #ababab;
+}
+
+.row-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 27%;
+
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+.about-col-2{
+    flex-basis: 65%;
+}
+
+
+.tab-titles{
+    display: flex;
+    margin: 2rem 0 4rem;
+}
+
+.tab-links{
+    margin-right: 5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: .3rem;
+    background: #00ffff;
+    position: absolute;
+    left: 0;
+    bottom: -.8rem;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.tab-contents ul li span{
+    color: #00ffff;
+    font-size: 1.4rem;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*--------services-------*/
+
+.services-section .row .box img {
+    width: 2.5rem;
+    margin: .5rem 0;
+}
+
+.services-section .box ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.services-section .box h2 {
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.services-section .box ul li a {
+    font-size: 1.9rem;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1rem;
+    position: relative;
+    transition: color ease-in .3s;
+    -webkit-transition: color ease-in .3s;
+    -moz-transition: color ease-in .3s;
+    -ms-transition: color ease-in .3s;
+    -o-transition: color ease-in .3s;
+}
+
+.services-section .box ul li a:hover {
+    color: #00ffff;
+}
+
+.services-section .box ul li a::before {
+    content: '';
+    width: 0;
+    height: .2rem;
+    background: #00ffff;
+    position: absolute;
+    left: 0;
+    bottom: -.2rem;
+    transition: width ease-in .3s;
+    -webkit-transition: width ease-in .3s;
+    -moz-transition: width ease-in .3s;
+    -ms-transition: width ease-in .3s;
+    -o-transition: width ease-in .3s;
+}
+
+.services-section .box ul li a:hover::before {
+    width: 100%;
+}
+
+.services-section .skillPercent {
+    width: 20rem;
+    height: 1.3rem;
+    background: #dadada;
+    position: absolute;
+    right: 5rem;
+    text-align: center;
+    color: #080808;
+    border-radius: .6rem;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.services-section .skillPercent::after {
+    content: '';
+    width: 0;
+    height: 1.3rem;
+    background: linear-gradient(to right, #00ffff 0 90%, #ffffff00);
+    display: table;
+    border-radius: .6rem;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    font-size: 1.4rem;
+    line-height: .9;
+}
+
+.services-section .skillPercent.html::after {
+    content: '90%';
+    width: 90%;
+}
+
+.services-section .skillPercent.css::after {
+    content: '85%';
+    width: 85%;
+}
+
+.services-section .skillPercent.js::after {
+    content: '25%';
+    width: 25%;
+}
+
+.services-section .skillPercent.photoshop::after {
+    content: '90%';
+    width: 90%;
+}
+
+.services-section .skillPercent.illustrotor::after {
+    content: '65%';
+    width: 65%;
+}
+
+.services-section .skillPercent.figma::after {
+    content: '50%';
+    width: 50%;
+}
+
+.services-section .skillPercent.word::after {
+    content: '95%';
+    width: 95%;
+}
+
+.services-section .skillPercent.excel::after {
+    content: '65%';
+    width: 65%;
+}
+
+.services-section .skillPercent.powerPoint::after {
+    content: '85%';
+    width: 85%;
+}
+
+/*----------myWork-----------*/
+.myWork-section {
+    padding: 5rem 0;
+}
+
+.myWork-section .main-work-box {
+    width: 100%;
+    height: 23rem;
+    background: #585858;
+    border-radius: .9rem;
+    -webkit-border-radius: .9rem;
+    -moz-border-radius: .9rem;
+    -ms-border-radius: .9rem;
+    -o-border-radius: .9rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-work-box img {
+    width: 100%;
+    height: 23rem;
+    transition: transform ease-in-out .3s;
+    -webkit-transition: transform ease-in-out .3s;
+    -moz-transition: transform ease-in-out .3s;
+    -ms-transition: transform ease-in-out .3s;
+    -o-transition: transform ease-in-out .3s;
+    position: relative;
+}
+
+.myWork-section .main-work-box:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    filter: blur(.15rem);
+    -webkit-filter: blur(.15rem);
+}
+
+.main-work-box .work-button-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.work-button-box .work-btn {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    background: #ffffff69;
+    padding: .5rem 3rem;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    scale: 0;
+    display: inline-block;
+    transition: scale ease .3s;
+    -webkit-transition: scale ease .3s;
+    -moz-transition: scale ease .3s;
+    -ms-transition: scale ease .3s;
+    -o-transition: scale ease .3s;
+}
+
+.work-button-box .work-btn:hover {
+    color: #262626;
+    background: #ffffffab;
+}
+
+.myWork-section .main-work-box:hover .work-btn {
+    scale: 1;
+}
+
+.myWork-section .main-work-box:hover .work-download-box {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+
+.myWork-section .work-download-box {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transform: translateX(130%);
+    -webkit-transform: translateX(130%);
+    -moz-transform: translateX(130%);
+    -ms-transform: translateX(130%);
+    -o-transform: translateX(130%);
+}
+
+.myWork-section .work-download-box .download-icon {
+    font-size: 2rem;
+    color: #ffffff;
+    width: 4.5rem;
+    height: 3.5rem;
+    background: #ffffff69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    cursor: pointer;
+}
+
+.myWork-section .work-download-box .download-icon:hover {
+    color: #262626;
+    background: #ffffffab;
+}
+
+.myWork-section .work-download-box:hover .download-menu {
+    scale: 1;
+}
+
+.myWork-section .work-download-box:hover ~ .myWork-section .work-button-box {
+    scale: 0;
+}
+
+.myWork-section .work-download-box .download-menu {
+    width: 14rem;
+    background: #ffffff69;
+    position: absolute;
+    right: 0;
+    padding: 1rem 0;
+    border-radius: .6rem;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
+    scale: 0;
+    transition: scale ease .2s;
+    -webkit-transition: scale ease .2s;
+    -moz-transition: scale ease .2s;
+    -ms-transition: scale ease .2s;
+    -o-transition: scale ease .2s;
+}
+
+.work-download-box .download-menu ul li {
+    list-style: none;
+}
+
+.download-menu ul li a {
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all ease .2s;
+    -webkit-transition: all ease .2s;
+    -moz-transition: all ease .2s;
+    -ms-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.download-menu ul li a:hover {
+    color: #262626;
+    background: #ffffff;
+}
+
+/*---------------contact-----------*/
+
+.contact-section {
+    padding: 10rem 0;
+}
+
+.contact-section h2 {
+    font-size: 3.5rem;
+}
+
+.contact-section .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-section .contact-left{
+    width: 40%;
+}
+.contact-section .contact-left .email-box,
+.contact-section .contact-left .phone-box{
+    margin-top: 2.5rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-left .email-box span,
+.contact-left .phone-box span {
+    margin-left: 1rem;
+}
+
+.contact-left .contact-icon {
+    color: #00ffff;
+}
+
+.contact-section .social-icons{
+    margin-top: 3rem;
+}
+.contact-section .social-icons a .social-media {
+    text-decoration: none;
+    font-size: 3rem;
+    margin-right: 1.5rem;
+    color: #ababab;
+    display: inline-block;
+    transition: color ease 0.2s;
+    -webkit-transition: color ease 0.2s;
+    -moz-transition: color ease 0.2s;
+    -ms-transition: color ease 0.2s;
+    -o-transition: color ease 0.2s;
+}
+.contact-section .social-icons a .social-media:hover{
+    color: #00ffff;
+}
+.contact-section .btn.btn2{
+    display: inline-block;
+    background: #00ffff;
+    color: #333;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    font-size: 1.6rem;
+}
+
+.contact-section .btn.btn2:hover {
+    background: #00ffffe7;
+}
+
+.contact-section .contact-right{
+    width: 60%;
+}
+.contact-section form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    color: #fff;
+    border-radius: .6rem;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
+    font-size: 1.6rem;
+}
+.contact-section form .btn2{
+    padding: 1.4rem 6rem;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 2.5rem 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.copyright abbr p {
+    font-size: 1.4rem;
+    margin-top: .5rem;
+    cursor: default;
+}
+
+#msg {
+    color: #00ffff;
+    margin-top: -4rem;
+    display: block;
+}
+
+
+
+
+/*--------css for mwdiaQuary---------*/

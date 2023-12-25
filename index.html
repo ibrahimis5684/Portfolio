@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IBRAHIM PORTFOLIO</title>
-    <link rel="shortcut icon" href="images/title-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/smallscreen.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>IBRAHIM</title>
+    <link rel="shortcut icon" href="resources/img/title-logo.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsiv.css">
+    <!-- vendors -->
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header id="home">
         <nav id="navbar">
-            <a href="#home"><img class="logo" src="images/logo.png" alt="ibrahim"></a>
+            <a href="#home"><img class="logo" src="resources/img/logo.png" alt="ibrahim"></a>
             <ul id="sidemenu">
+                <i onclick="closemenu()" class="menu-icon menu-close fa-solid fa-xmark"></i>
                 <li><a href="#home" style="background: #00ffff; color: #333;" onclick="changeColor(this)">home</a></li>
                 <li><a href="#about" onclick="changeColor(this)">about</a></li>
                 <li><a href="#services" onclick="changeColor(this)">services</a></li>
-                <li><a href="#portfolio" onclick="changeColor(this)">portfolio</a></li>
+                <li><a href="#myWork" onclick="changeColor(this)">My Work</a></li>
                 <li><a href="#contact" onclick="changeColor(this)">contact</a></li>
                 <li><a href="https://ibrahimis5684.github.io/codingibrahim/" onclick="changeColor(this)">source code</a></li>
             </ul>
-            <i onclick="openmenu()" class='bx menu-icon bx-menu'></i>
+            <i onclick="openmenu()" class="menu-icon fa-solid fa-bars"></i>
         </nav>
-        <div class="container">
+        <div class="row">
             <div class="header-text">
                 <p>website & Graphic Designer</p>
                 <h1>Hi I'm <span>ibrahim</span> <br>Form Bangladesh</h1>
@@ -34,14 +39,14 @@
 
     <!---------about----------->
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
+    <section id="about">
+        <div class="row">
+            <div class="row-box">
                 <div class="about-col-1">
-                    <img src="images/user.jpg" alt="none">
+                    <img src="resources/img/user.jpg" alt="ibrahim">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">about me</h1>
+                    <h2 class="sub-title">about me</h2>
                     <p>I am Ibrahim, an 11th grade student from Bangladesh, a budding graphic and web designer. With a keen eye for aesthetics and a passion for digital artistry, I have mastered the craft of creating visually stunning websites and graphics. My creative journey holds immense potential, promising a dynamic future in design.</p>
 
                     <div class="tab-titles">
@@ -51,16 +56,16 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Graphic Design</span><br>Photoshop & Illustration</li>
+                            <li><span>Graphic Design</span><br>Photoshop illustration & figma</li>
                             <li><span>Web Devlopment</span><br>Html Css & Javascript</li>
-                            <li><span>App Devlopment</span><br>none</li>
+                            <li><span>microsoft office</span><br>Word Excel & powerPoint</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>Graphic Design</span><br>Up to 3 years experience</li>
                             <li><span>Web Devlopment</span><br>Up to 1 years experience</li>
-                            <li><span>App Devlopment</span><br>none</li>
+                            <li><span>microsoft office</span><br>Up to 3.5 years experience</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -73,108 +78,154 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!---------services----------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><style>svg{fill:#ffffff}</style><path d="M48.2 66.8c-.1-.8-.2-1.7-.2-2.5c0-.1 0-.1 0-.2c0-8.8 7.2-16 16-16c.9 0 1.9 .1 2.8 .2C74.3 49.5 80 56.1 80 64c0 8.8-7.2 16-16 16c-7.9 0-14.5-5.7-15.8-13.2zM0 64c0 26.9 16.5 49.9 40 59.3V228.7C16.5 238.1 0 261.1 0 288c0 35.3 28.7 64 64 64c26.9 0 49.9-16.5 59.3-40H324.7c9.5 23.5 32.5 40 59.3 40c35.3 0 64-28.7 64-64c0-26.9-16.5-49.9-40-59.3V123.3c23.5-9.5 40-32.5 40-59.3c0-35.3-28.7-64-64-64c-26.9 0-49.9 16.5-59.3 40H123.3C113.9 16.5 90.9 0 64 0C28.7 0 0 28.7 0 64zm368 0a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zM324.7 88c6.5 16 19.3 28.9 35.3 35.3V228.7c-16 6.5-28.9 19.3-35.3 35.3H123.3c-6.5-16-19.3-28.9-35.3-35.3V123.3c16-6.5 28.9-19.3 35.3-35.3H324.7zM384 272a16 16 0 1 1 0 32 16 16 0 1 1 0-32zM80 288c0 7.9-5.7 14.5-13.2 15.8c-.8 .1-1.7 .2-2.5 .2l-.2 0c-8.8 0-16-7.2-16-16c0-.9 .1-1.9 .2-2.8C49.5 277.7 56.1 272 64 272c8.8 0 16 7.2 16 16zm391.3-40h45.4c6.5 16 19.3 28.9 35.3 35.3V388.7c-16 6.5-28.9 19.3-35.3 35.3H315.3c-6.5-16-19.3-28.9-35.3-35.3V352H232v36.7c-23.5 9.5-40 32.5-40 59.3c0 35.3 28.7 64 64 64c26.9 0 49.9-16.5 59.3-40H516.7c9.5 23.5 32.5 40 59.3 40c35.3 0 64-28.7 64-64c0-26.9-16.5-49.9-40-59.3V283.3c23.5-9.5 40-32.5 40-59.3c0-35.3-28.7-64-64-64c-26.9 0-49.9 16.5-59.3 40H448v16.4c9.8 8.8 17.8 19.5 23.3 31.6zm88.9-26.7a16 16 0 1 1 31.5 5.5 16 16 0 1 1 -31.5-5.5zM271.8 450.7a16 16 0 1 1 -31.5-5.5 16 16 0 1 1 31.5 5.5zm301.5 13c-7.5-1.3-13.2-7.9-13.2-15.8c0-8.8 7.2-16 16-16c7.9 0 14.5 5.7 15.8 13.2l0 .1c.1 .9 .2 1.8 .2 2.7c0 8.8-7.2 16-16 16c-.9 0-1.9-.1-2.8-.2z"/></svg></i>
-                    <h2>Graphic Design</h2>
-                    <p>Graphic design is visual communication through typography, images, and layout. It combines creativity and technology to convey messages effectively and aesthetically.</p>
-                    <a href="https://www.facebook.com/profile.php?id=100095440028843">learn more</a>
+    <section class="services-section" id="services">
+        <div class="row">
+            <h2>My Services</h2>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_3 box">
+                <div class="webdesign-box">
+                    <h3>Web Devlopment</h3>
+                    <ul>
+                        <li>
+                            <img src="resources/img/softwer-logo/html.png" alt="html">
+                            <a id="errorButton" href="#services">html</a>
+                            <div class="skillPercent html"></div>
+                        </li>
+                        <li>
+                            <img src="resources/img/softwer-logo/css.png" alt="css">
+                            <a id="errorButton" href="#services">css</a>
+                            <div class="skillPercent css"></div>
+                        </li>
+                        <li>
+                            <img src="resources/img/softwer-logo/js.png" alt="js">
+                            <a id="errorButton" href="#services">javascript</a>
+                            <div class="skillPercent js"></div>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <i><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><style>svg{fill:#ffffff}</style><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></i>
-                    <h2>Web Design</h2>
-                    <p>Web development is the process of creating and maintaining websites and web applications. It involves coding, designing, and optimizing web content for functionality and user experience.</p>
-                    <a href="https://www.facebook.com/profile.php?id=100095440028843">learn more</a>
+            </div>
+            <!-- graphic Design -->
+            <div class="col span_1_of_3 box">
+                <div class="graphic-box">
+                    <h3>graphic design</h3>
+                    <ul>
+                        <li>
+                            <img src="resources/img/softwer-logo/photoshop.png" alt="html">
+                            <a id="errorButton" href="#services">photoshop</a>
+                            <div class="skillPercent photoshop"></div>
+                        </li>
+                        <li>
+                            <img src="resources/img/softwer-logo/illustrotor.png" alt="css">
+                            <a id="errorButton" href="#services">illustrotor</a>
+                            <div class="skillPercent illustrotor"></div>
+                        </li>
+                        <li>
+                            <img src="resources/img/softwer-logo/figma.png" alt="js">
+                            <a id="errorButton" href="#services">figma</a>
+                            <div class="skillPercent figma"></div>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <i><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M255.9 120.9l9.1-15.7c5.6-9.8 18.1-13.1 27.9-7.5 9.8 5.6 13.1 18.1 7.5 27.9l-87.5 151.5h63.3c20.5 0 32 24.1 23.1 40.8H113.8c-11.3 0-20.4-9.1-20.4-20.4 0-11.3 9.1-20.4 20.4-20.4h52l66.6-115.4-20.8-36.1c-5.6-9.8-2.3-22.2 7.5-27.9 9.8-5.6 22.2-2.3 27.9 7.5l8.9 15.7zm-78.7 218l-19.6 34c-5.6 9.8-18.1 13.1-27.9 7.5-9.8-5.6-13.1-18.1-7.5-27.9l14.6-25.2c16.4-5.1 29.8-1.2 40.4 11.6zm168.9-61.7h53.1c11.3 0 20.4 9.1 20.4 20.4 0 11.3-9.1 20.4-20.4 20.4h-29.5l19.9 34.5c5.6 9.8 2.3 22.2-7.5 27.9-9.8 5.6-22.2 2.3-27.9-7.5-33.5-58.1-58.7-101.6-75.4-130.6-17.1-29.5-4.9-59.1 7.2-69.1 13.4 23 33.4 57.7 60.1 104zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216z"/></svg></i>
-                    <h2>App Design</h2>
-                    <p>none</p>
-                    <a href="https://www.facebook.com/profile.php?id=100095440028843">learn more</a>
+            </div>
+            <!-- microsoft office -->
+            <div class="col span_1_of_3 box">
+                <div class="office-box">
+                    <h3>microsoft office</h3>
+                    <ul>
+                        <li>
+                            <img src="resources/img/softwer-logo/msWord.png" alt="html">
+                            <a id="errorButton" href="#services">word</a>
+                            <div class="skillPercent word"></div>
+                        </li>
+                        <li>
+                            <img src="resources/img/softwer-logo/msExcel.png" alt="css">
+                            <a id="errorButton" href="#services">excel</a>
+                            <div class="skillPercent excel"></div>
+                        </li>
+                        <li>
+                            <img src="resources/img/softwer-logo/msPowerpoints.png" alt="js">
+                            <a id="errorButton" href="#services">powerPoint</a>
+                            <div class="skillPercent powerPoint"></div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-<!---------portfolio----------->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" alt="none">
-                    <div class="layer">
-                        <h3>Graphic Design</h3>
-                        <p>Click on the link to order any graphic design and you will get a special discount.</p>
-                        <a href="https://www.facebook.com/profile.php?id=100095440028843"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:aqua}</style><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></a>
+<!---------myWork----------->
+    <section class="myWork-section" id="myWork">
+        <div class="row">
+            <h2>my work</h2>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_3 box">
+                <div class="main-work-box">
+                    <img src="resources/img/various-template.png" alt="">
+                    <div class="work-button-box">
+                        <a href="myWorkSection/petcare/index.html" target="_blank" class="work-btn">visit</a>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png" alt="none">
-                    <div class="layer">
-                        <h3>personal portfolio website.</h3>
-                        <p>Visit my facebook and inbox to create personal portfolio website with HTML and CSS 60.04% off for the month of September.</p>
-                        <a href="https://www.facebook.com/profile.php?id=100095440028843"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:aqua}</style><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="none">
-                    <div class="layer">
-                        <h3>product background remove</h3>
-                        <p>Remove background on any of your products at 50% discount, today visit my facebook and inbox me.</p>
-                        <a href="https://www.facebook.com/profile.php?id=100095440028843"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill: aqua}</style><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></a>
+                    <div class="work-download-box">
+                        <i class="download-icon fa-solid fa-download"></i>
+                        <div class="download-menu">
+                            <ul>
+                                <li><a id="errorButton" href="#myWork">source code</a></li>
+                                <li><a id="errorButton" href="#myWork">psd</a></li>
+                                <li><a id="errorButton" href="#myWork">pdf</a></li>
+                                <li><a id="errorButton" href="#myWork">jpg</a></li>
+                                <li><a id="errorButton" href="#myWork">png</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a class="btn" href="https://www.facebook.com/profile.php?id=100095440028843">See more</a>
         </div>
-    </div>
-
+    </section>
 <!---------contact----------->
 
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1>Contact Me</h1>
-                    <p> <i><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></i>ibrahim094islam@gmail.com</p>
-                    <p> <i><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#ffffff}</style><path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zm-90.7 96.7c-9.7-2.6-19.9 2.3-23.7 11.6l-20 48c-3.4 8.2-1 17.6 5.8 23.2L280 231.7c-16.6 35.2-45.1 63.7-80.3 80.3l-20.2-24.7c-5.6-6.8-15-9.2-23.2-5.8l-48 20c-9.3 3.9-14.2 14-11.6 23.7l12 44C111.1 378 119 384 128 384c123.7 0 224-100.3 224-224c0-9-6-16.9-14.7-19.3l-44-12z"/></svg></i>01908111251</p>
-                    <div class="social-icons">
+    <section class="contact-section" id="contact">
+        <div class="row">
+            <div class="contact-left col">
+                 <h2>Contact Me</h2>
+                 <div class="email-box"><i class="contact-icon fa-solid fa-envelope"></i><span>ibrahim094islam@gmail.com</span></div>
+                <div class="phone-box"><i class="contact-icon fa-solid fa-phone"></i><span>01908111251</span></div>
+                <div class="social-icons">
 
-                        <a href="https://www.facebook.com/ibrahim094is/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                    <a href="https://www.facebook.com/ibrahim094is/" target="_blank"><i class="social-media fa-brands fa-facebook"></i></a>
 
-                        <a href="https://www.instagram.com/ibrahim094is/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#ffffff}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                    <a href="https://www.instagram.com/ibrahim094is/" target="_blank"><i class="social-media fa-brands fa-instagram"></i></a>
 
-                        <a href="https://www.youtube.com/channel/UCxq4mS8sd587rsyYociKu3w" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><style>svg{fill:#ffffff}</style><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a>
+                    <a href="https://www.youtube.com/channel/UCxq4mS8sd587rsyYociKu3w" target="_blank"><i class="social-media fa-brands fa-youtube"></i></a>
                         
-                        <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#ffffff}</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg></a>
-                    </div>
-                    <a class="btn btn2" href="images/ibrahim Resume.pdf" download >Download CV</a>
+                    <a id="errorButton" href="#contact" target="_blank"><i class="social-media fa-brands fa-x-twitter"></i></a>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email Address" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+                <a class="btn btn2" href="resources/img/ibrahim Resume.pdf" download >Download CV</a>
+            </div>
+            <div class="contact-right col">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email Address" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
             </div>
         </div>
-        <footer>
-            <div class="copyright">
-                <p>2023 Copyright &copy; Ibrahim.</p>
-                <abbr title="last update 12-12-2023"><p>v 2.0.3</p></abbr>
-            </div>
-        </footer>
-    </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+        <div class="copyright">
+            <p>2023 Copyright &copy; Ibrahim.</p>
+            <abbr title="last update 25-12-2023"><p>v 2.0.4</p></abbr>
+        </div>
+    </footer>
 
-<script src="javascript/script.js"></script>
+    <!-- javascript -->
+    <script src="resources/js/script.js"></script>
+    <script src="vendors/js/html5shiv-printshiv.min.js"></script>
+    <script src="vendors/js/respond.min.js"></script>
 </body>
 </html>

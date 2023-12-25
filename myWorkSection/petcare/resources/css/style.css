@@ -1,0 +1,530 @@
+.main-nav-menu ul li a,
+h2,
+h4 {
+    text-transform: capitalize
+}
+
+.about .box:first-child,
+.about .box:nth-child(2),
+.product-section,
+.promo-section {
+    position: relative
+}
+
+.pricing-section,
+.product-section,
+.promo-section,
+.titleHearOne-section .row:first-child,
+header {
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+    font-size: 7.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #739ee3;
+}
+
+h4,
+p {
+    font-family: Nunito, sans-serif;
+}
+
+.row {
+    padding: 0 5%;
+}
+
+h1 {
+    line-height: .5;
+}
+
+h3 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+h4 {
+    font-size: 3.3rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+p {
+    font-size: 2.9rem;
+    font-weight: 400;
+    color: #fff;
+    width: 70%;
+    margin: auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+.btn,
+.btn:active,
+.btn:link {
+    background: #edc315;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: lowercase;
+    text-decoration: none;
+    padding: 2.3rem 9.6rem;
+    display: inline-block;
+    margin-top: 5rem;
+    border-radius: 32.5rem;
+    -webkit-border-radius: 32.5rem;
+    -moz-border-radius: 32.5rem;
+    -ms-border-radius: 32.5rem;
+    -o-border-radius: 32.5rem;
+    transition: background .2s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    -ms-transition: background .2s ease-in-out;
+    -o-transition: background .2s ease-in-out
+}
+
+.dogPaw,
+.price-card-box .little-description,
+.price-card-box h3 {
+    color: #739ee3;
+}
+
+.main-nav-menu ul,
+.nav-row {
+    display: flex;
+    align-items: center;
+}
+
+.btn:active:hover,
+.btn:hover,
+.btn:link:hover {
+    background: #cea813;
+}
+
+nav {
+    background: #5381c1bb;
+    width: 100%;
+    padding: 1.5rem 0;
+    position: fixed;
+    z-index: 9999;
+}
+
+nav .nav-logo img {
+    width: 13.7rem;
+}
+
+.nav-row {
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.main-nav-menu ul {
+    float: right;
+}
+
+.about .row,
+.contact-side ul,
+.promo-section .cricle-box {
+    align-items: center;
+    display: flex;
+}
+
+.main-nav-menu ul li {
+    margin: 0 1rem;
+}
+
+.main-nav-menu ul li a {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    padding: .5rem 1.5rem;
+    border-radius: 32.5rem;
+    -webkit-border-radius: 32.5rem;
+    -moz-border-radius: 32.5rem;
+    -ms-border-radius: 32.5rem;
+    -o-border-radius: 32.5rem;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.main-nav-menu ul li a:hover {
+    background: #3333333d;
+}
+
+header {
+    background-image: url(img/headerBg.png);
+    background-color: #5380c1;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+header .row:nth-child(2) {
+    padding: 19.5rem 5%;
+}
+
+header .little-description {
+    line-height: 1;
+    margin: 0 auto;
+}
+
+.product-section {
+    padding: 10.8rem 0;
+    background: 0 0;
+}
+
+.product-section .little-description {
+    margin: 2rem auto;
+}
+
+.product-section .picture-box {
+    width: 31.3rem;
+    height: 31.3rem;
+    background: #979797;
+    margin: 5rem auto 3.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+}
+
+.product-section .picture-box img {
+    width: 32rem;
+}
+
+.product-section::after {
+    content: url(img/shape01.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.product-section::before {
+    content: url(img/shape02.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.product-section .shape-box img {
+    width: 7.1rem;
+    position: absolute;
+    right: 9%;
+    bottom: 5%;
+}
+
+.promo-section {
+    background-image: url(img/promoBg.png);
+    background-color: #edc315;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 9.4rem 0;
+}
+
+.promo-section::after {
+    content: url(img/dot-shape.png);
+    position: absolute;
+    top: -1rem;
+    left: 5%;
+}
+
+.promo-section .little-description {
+    margin: 3rem auto;
+}
+
+.promo-section .cricle-box {
+    width: 26.2rem;
+    height: 26.2rem;
+    background: 0 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    justify-content: center;
+    border: 1rem solid #fff;
+    margin: 15rem auto 0;
+}
+
+.cricle-box .main-detailes .little-description {
+    width: 100%;
+    margin: 0;
+}
+
+.about,
+.aboutOne-section {
+    padding: 20.5rem 0;
+    background: #5381c1;
+}
+
+.about .about-img-box {
+    width: 50rem;
+    height: 50rem;
+    background: #696969d3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.about .about-img-box img {
+    width: 54rem;
+}
+
+.about h2 {
+    margin-top: 5rem;
+}
+
+.about .little-description {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.about .box:first-child::after {
+    content: url(img/triangle-shape.png);
+    position: absolute;
+    top: -15rem;
+    left: 5%;
+}
+
+.about .box:first-child::before {
+    content: url(img/dot-shape.png);
+    position: absolute;
+    bottom: -20rem;
+    left: 5%;
+}
+
+.about .box:nth-child(2)::after {
+    content: url(img/dot-shape.png);
+    position: absolute;
+    top: -17rem;
+    right: 5%;
+}
+
+.about .box:nth-child(2)::before {
+    content: url(img/triangle-shape.png);
+    position: absolute;
+    bottom: -26rem;
+    right: 5%;
+}
+
+.aboutTow-section {
+    background: transparent;
+}
+
+.pricing-section {
+    background: #5380c1;
+    padding: 8.5rem 0;
+}
+
+.pricing-section .little-description {
+    margin-top: 3.5rem;
+}
+
+.pricing-section .price-card-box {
+    width: 100%;
+    background: #fff;
+    padding: 2.7rem 2.5rem;
+    margin-top: 12rem;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+    box-shadow: .5rem .5rem .5rem #3333335d;
+}
+
+.price-card-box .little-description {
+    font-size: 2.2rem;
+    width: 100%;
+}
+
+.dogPaw {
+    font-size: 8rem;
+    margin: 3rem 0;
+}
+
+.price-card-box .price-btn {
+    font-size: 1.8rem;
+}
+
+.titleHearOne-section {
+    background: 0 0;
+    padding: 10rem 0;
+    position: relative;
+}
+
+.titleHearOne-section::after {
+    content: url(img/dot-shape.png);
+    position: absolute;
+    top: 20rem;
+    right: -.5rem;
+}
+
+.titleHearOne-section::before {
+    content: url(img/shape03.png);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.titleHearOne-section .row:nth-child(2)::before {
+    content: url(img/dot-shape.png);
+    position: absolute;
+    bottom: 6rem;
+    left: -.5rem;
+}
+
+.titleHearOne-section .row:first-child .little-description {
+    margin-top: 5.5rem;
+}
+
+.titleHearOne-section .dogPaw {
+    color: #fff;
+}
+
+.titleHearOne-section .row:nth-child(2) .box {
+    margin-top: 10rem;
+}
+
+.titleHearOne-section .row:nth-child(2) .little-description {
+    font-size: 2.2rem;
+}
+
+.contact-side ul li:first-child,
+.titleHearOne-section .col:nth-child(3) {
+    margin-left: 0;
+}
+
+.titleHearOne-section .main-title-here-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-title-here-box .title-box {
+    width: 65%;
+}
+
+.main-title-here-box .little-description {
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.titleHearTow-section {
+    background-image: url(img/titleTowBg.png);
+    background-color: #edc315;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    padding: 44.5rem 0 23rem;
+    text-align: center;
+}
+
+.titleHearTow-section .little-description {
+    width: 90%;
+    font-size: 5rem;
+}
+
+.titleHearTow-section h3 {
+    margin-top: 7.9rem;
+}
+
+.footer-section {
+    padding: 7.3rem 0;
+    background: #343434;
+}
+
+.footer-section .footer-row {
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section .about-servises-outher-side,
+.footer-section .contact-side {
+    width: 50%;
+}
+
+.contact-side .little-description {
+    width: 80%;
+    margin-top: 3.6rem;
+    margin-left: 0;
+    font-size: 2.5rem;
+}
+
+.footer-section .contact-side .social-icon {
+    width: 4.4rem;
+    height: 4.4rem;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 2.5rem;
+    color: #343434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section .contact-side .social-icon:hover {
+    background: #343434;
+    color: #fff;
+}
+
+.contact-side a {
+    text-decoration: none;
+}
+
+.contact-side ul li {
+    margin: 2.8rem .8rem .8rem;
+}
+
+.about-servises-outher-side ul li a {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    display: inline-block;
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+}
+
+.about-servises-outher-side ul li a:hover {
+    text-decoration: underline;
+}
