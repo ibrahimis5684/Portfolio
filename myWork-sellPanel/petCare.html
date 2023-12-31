@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>downloa my work template | IBRAHIM</title>
+    <link rel="shortcut icon" href="../resources/img/title-logo.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="../resources/css/responsiv.css">
+    <link rel="stylesheet" href="../resources/css/buyAndSelll.css">
+    <!-- vendors -->
+    <link rel="stylesheet" href="../vendors/css/grid.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav id="navbar">
+        <a href="../index.html#home"><img class="logo" src="../resources/img/logo.png" alt="ibrahim"></a>
+        <i onclick="openmenu()" class="menu-icon fa-solid fa-bars"></i>
+        <div class="social-media">
+            <ul>
+                <li><a href="https://www.facebook.com/ibrahim094is" target="_blank"><i class="contact-icon fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://m.me/ibrahim094is" target="_blank"><i class="contact-icon fa-brands fa-facebook-messenger"></i></a></li>
+                <li><a href="https://wa.me/qr/F3DOSKX342DIL1" target="_blank"><i class="contact-icon fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!---------buy and sell panel----------->
+    <section class="buyAndSell">
+        <div class="row">
+            <p class="little-description"></p>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_2 box">
+                <div class="png-web-temp-box">
+                    <img src="../resources/img/petcare-template-png.png" alt="">
+                </div>
+            </div>
+            <div class="col span_1_of_2 box">
+                <div class="download-button-side">
+                    <div class="flex-button-myWork">
+                        <div class="down freeDownload-box">
+                            <button onclick="toggleTransform('free')">
+                                <span>free download <i class="btn-arrow fa-solid fa-angle-down"></i></span>
+                            </button>
+                            <div class="down-sub-cat free">
+                                <ul>
+                                    <li><a href="https://drive.google.com/uc?export=download&id=1qu73vK2-1oPM2t9VFPof2hjibbK_o-ky">pdf</a></li>
+                                    <li><a href="https://drive.google.com/uc?export=download&id=1eA_eW5yJnotz52mT0nBS58-tbfw32fdP">jpg</a></li>
+                                    <li><a href="https://drive.google.com/uc?export=download&id=1QljkVg8NRj2HH2KtwLKSMUabJuH1hiUt">png</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="down download-box">
+                            <button onclick="toggleTransform('premium')">
+                                <span>premium download <i class="btn-arrow fa-solid fa-angle-down"></i></span>
+                            </button>
+                            <div class="down-sub-cat premium">
+                                <ul>
+                                    <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=1lYdJQ1v2Vf63Zaz0UxTs31cjLI2cBIwC" >source code</a></li>
+                                    <li><a target="_blank" href="https://drive.google.com/uc?export=download&id=1Kvxd2xJxhAc0cpTLLq2ujASurUPiDDHx" >psd</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openPremiumform()" class="btn btn-buyPremium"><span>buy premium</span></button>
+                    <p class="little-description">Click Buy now to purchase premium version.</p>
+                </div>
+            </div>
+        </div>
+        <!-- form -->
+        <div class="premium-down-form-box" id="premiumFormBox">
+            <div class="form-box">
+                <div class="close-menu">
+                    <button id="languageButton" onclick="toggleLanguage()">bengali</button>
+                    <button onclick="closePremiumform()"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <form name="submit-to-google-sheet" id="passwordForm" onsubmit="return validatePassword()">
+                    <div class="description">
+                        <p id="english" class="little-description active">Remember to deposit the premium fee of Tk.100 before filling the form. <b>01908111281</b> Send money through 'bkash and nagad' to this number. The number with which you send money should be entered in the 'Contact Number' section.</p>
+                        <p id="bengali" class="little-description">ফর্মটি পূরণ করার আগে 100 টাকা প্রিমিয়াম ফি জমা দিতে ভুলবেন না। <b>01908111281</b> এই নম্বরে 'বিকাশ ও নগদ'-এর মাধ্যমে টাকা পাঠান। যে নম্বর দিয়ে আপনি টাকা পাঠাবেন সেটি 'Contact Number' বিভাগে লিখতে হবে।</p>
+                    </div>
+                    <div class="input-flex-box name-box">
+                        <label class="little-description active" id="english" for="nam">full name :</label>
+                        <label class="little-description" id="bengali" for="nam">পুরো নাম  :</label>
+                        <input name="NameRe" type="text" id="nam" placeholder="enter your full name" required>
+                    </div>
+                    <div class="input-flex-box email-box">
+                        <label class="little-description active" id="english" for="email">your email :</label>
+                        <label class="little-description" id="bengali" for="email">তোমার ইমেইল :</label>
+                        <input name="EmailRe" type="email" id="email" placeholder="enter your email address" required>
+                    </div>
+                    <div class="input-flex-box number-box">
+                        <label class="little-description active" id="english" for="num">contact number :</label>
+                        <label class="little-description" id="bengali" for="num">যোগাযোগের নম্বর :</label>
+                        <p id="english" title="100Tk" class="little-description active">Enter the number with which you made the payment.</p>
+                        <p id="bengali" title="100Tk" class="little-description">যে নম্বর দিয়ে আপনি অর্থপ্রদান করেছেন সেটি লিখুন.</p>
+                        <input name="NumberRe" type="tel" pattern="[0-9]{11}" id="num" placeholder="enter your contact number" required>
+                    </div>
+                    <div class="input-flex-box pementGetway-box">
+                        <label class="little-description active" id="english" for="fee">What did you pay the fee with? :</label>
+                        <label class="little-description" id="bengali" for="fee">আপনি কি দিয়ে ফি পরিশোধ করেছেন? :</label>
+                        <select name="PementRe" id="fee" required>
+                            <option value="Select one">Select one</option>
+                            <option class="little-description active" id="english" value="bkash">bkash</option>
+                            <option class="little-description" id="bengali" value="bkash">বিকাশ</option>
+                            <option class="little-description active" id="english" value="nagad">nagad</option>
+                            <option class="little-description" id="bengali" value="nagad">নগদ</option>
+                        </select>
+                    </div>
+                    <div class="pass-error-sms">
+                        <span id="passwordError"></span>
+                    </div>
+                    <div class="condition-box">
+                        <input id="yes" type="checkbox" required>
+                        <label id="english" class="active condition" for="yes">Your form will be checked manually, so it will take some time for your Email to become active.</label>
+                        <label id="bengali" class="condition" for="yes">আপনার ফর্ম ম্যানুয়ালি চেক করা হবে, তাই আপনার ইমেল সক্রিয় হতে কিছু সময় লাগবে।</label>
+                    </div>
+                    <div class="submit-box">
+                        <input type="reset" value="reset">
+                        <button type="submit" id="submitBtn">register</button>
+                        <div class="loading-animation" id="loadingAnimation"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <div class="copyright">
+            <p>2023 Copyright &copy; Ibrahim.</p>
+            <abbr title="last update 31-12-2023"><p>v 2.0.5</p></abbr>
+        </div>
+    </footer>
+
+    <!-- javascript -->
+    <script src="../resources/js/myWork.js"></script>
+    <script src="../resources/js/script.js"></script>
+    <script src="../vendors/js/html5shiv-printshiv.min.js"></script>
+    <script src="../vendors/js/respond.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* max width = 1200px */
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 60.5%;
+    }
+}
+
+/* max width = 1024px */
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 50.5%;
+    }
+}
+
+/* max width = 980px */
+@media only screen and (max-width: 980px) {
+
+}
+
+/* max width = 768px */
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 45.5%;
+    }
+}
+
+/* max width = 480px */
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 25.5%;
+    }
+}

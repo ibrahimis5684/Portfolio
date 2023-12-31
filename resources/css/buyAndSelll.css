@@ -1,0 +1,698 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#navbar .social-media {
+    width: 30%;
+}
+
+.social-media ul li a .contact-icon{
+    width: 5rem;
+    height: 5rem;
+    background: #333333;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2.2rem;
+}
+
+.social-media ul li {
+    margin: 0 1rem;
+}
+
+.social-media ul li a:hover::after {
+    content: '';
+    width: 0;
+}
+
+.social-media ul li a:hover .fa-facebook-f{
+    color: #1877F2;
+    background: #ffffff;
+}
+
+.social-media ul li a:hover .fa-facebook-messenger {
+   color: #00A0FF;
+    background: #ffffff;
+}
+
+.social-media ul li a:hover .fa-whatsapp {
+    color: #51C85D;
+    background: #ffffff;
+}
+
+.buyAndSell {
+    padding: 10% 0 0;
+    position: relative;
+}
+
+.buyAndSell .little-description {
+    font-size: 2.2rem;
+    color: #ffffff;
+    line-height: 1.5;
+    width: 80%;
+}
+
+.buyAndSell .png-web-temp-box {
+    height: 100vh;
+    overflow: auto;
+}
+
+.buyAndSell .png-web-temp-box::-webkit-scrollbar {
+    background: transparent;
+    width: 1rem;
+}
+
+.buyAndSell .png-web-temp-box::-webkit-scrollbar-thumb {
+    background: #808080;
+    border-radius: .6rem;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
+}
+
+.buyAndSell .png-web-temp-box img {
+    width: 100%;
+    margin: auto;
+}
+
+.buyAndSell .download-button-side {
+    width: 90%;
+    height: auto;
+    padding: 2rem;
+    border: .1rem solid #00ffff;
+    margin: auto;
+    border-radius: .9rem;
+    -webkit-border-radius: .9rem;
+    -moz-border-radius: .9rem;
+    -ms-border-radius: .9rem;
+    -o-border-radius: .9rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.flex-button-myWork .download-box .premium-down-lear {
+    width: 95%;
+    height: 95%;
+    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: .9rem;
+    -webkit-border-radius: .9rem;
+    -moz-border-radius: .9rem;
+    -ms-border-radius: .9rem;
+    -o-border-radius: .9rem;
+}
+
+.download-box .premium-down-lear .close-btn-box button {
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    color: #333333;
+    font-size: 2rem;
+    padding: 0;
+    margin: .5rem;
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.download-box .premium-down-lear .close-btn-box button:hover {
+    background: #3333336c;
+}
+
+.download-box .premium-down-lear .close-btn-box button:active {
+    background: #333333c2;
+}
+
+.premium-down-lear .downLear-box {
+    width: 100%;
+    height: 100%;
+    padding: 4rem 2rem 2rem;
+}
+
+.downLear-box input[type="search"] {
+    width: 100%;
+    height: 4rem;
+    margin: auto;
+    font-size: 1.6rem;
+    color: #000000;
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+
+.downLear-box .button-Downcodepsd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.downLear-box .button-Downcodepsd a {
+    background: #fbff00;
+    color: #333333;
+    border-color: #333333;
+    font-size: 2.2rem;
+    padding: 0;
+    width: 17rem;
+    height: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2rem 0 0;
+    transition: all ease 0s;
+    -webkit-transition: all ease 0s;
+    -moz-transition: all ease 0s;
+    -ms-transition: all ease 0s;
+    -o-transition: all ease 0s;
+}
+
+.downLear-box .button-Downcodepsd a:nth-child(2) {
+    margin-left: 2rem;
+}
+
+.downLear-box .button-Downcodepsd a:hover {
+    background: #dbdf00;
+}
+
+.downLear-box .button-Downcodepsd a:active {
+    background: #fbff00;
+}
+
+.download-button-side .flex-button-myWork {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+
+#premiumDownLear {
+    scale: 1;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.download-button-side .down button {
+    width: 25rem;
+    height: 5rem;
+    margin-top: 2rem;
+    background: #fbff00;
+    border: none;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    cursor: pointer;
+}
+
+.download-button-side button span {
+    font-size: 1.9rem;
+    color: #333333;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.download-button-side button:active {
+    background: #dbdf00;
+}
+
+.download-button-side .freeDownload-box button {
+    background: #ffffff;
+}
+
+.download-button-side .freeDownload-box button:active {
+    background: #dfdfdf;
+}
+
+span .btn-arrow {
+    margin-left: 1rem;
+}
+
+.free,
+.premium {
+    width: 50%;
+    height: 0;
+    padding: 0;
+    background: transparent;
+    border: .1rem solid #00ffff;
+    border-radius: .6rem;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
+    margin: -1rem auto 0;
+    -webkit-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition: all ease .5s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    overflow: hidden;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+}
+
+.down .down-sub-cat ul li {
+    list-style: none;
+}
+
+.down .down-sub-cat ul li a {
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    display: block;
+    cursor: pointer;
+}
+
+.down .down-sub-cat ul li a:hover {
+    background: #ffffff;
+    color: #333333;
+}
+
+.download-box .down-sub-cat ul li a:hover {
+    background: #fbff00;
+    color: #333333;
+}
+
+.download-button-side .little-description {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.download-button-side .btn-buyPremium {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    transition: all ease .2s;
+    -webkit-transition: all ease .2s;
+    -moz-transition: all ease .2s;
+    -ms-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    margin-bottom: 0;
+    cursor: pointer;
+    background: transparent;
+}
+
+.download-button-side .btn-buyPremium span {
+    color: #ffffff;
+}
+
+.download-button-side .btn-buyPremium:hover span{
+    color: #333333;
+}
+
+.download-button-side .btn-buyPremium:hover {
+    border: none;
+    background: #00ffff;
+}
+
+.buyAndSell .premium-down-form-box {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    -webkit-backdrop-filter: blur(.3rem);
+            backdrop-filter: blur(.3rem);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    scale: 0;
+}
+
+.premium-down-form-box .form-box {
+    width: 50%;
+    height: auto;
+    padding: 0 0 5rem 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: .9rem;
+    -webkit-border-radius: .9rem;
+    -moz-border-radius: .9rem;
+    -ms-border-radius: .9rem;
+    -o-border-radius: .9rem;
+}
+
+.form-box .close-menu {
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1rem;
+}
+
+.form-box .close-menu button {
+    color: #333333;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+
+#languageButton {
+    width: auto;
+    padding: .5rem 1.5rem;
+    background: #00ffff;
+    color: #333333;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border: .1rem solid #000000;
+}
+
+#languageButton:hover {
+    background: #00e9e9;
+}
+
+#languageButton:active {
+    background: #00ffff;
+}
+
+.form-box .close-menu button:hover {
+    background: #a8a8a8de;
+}
+
+.buyAndSell .premium-down-form-box.closed {
+    scale: 0;
+}
+
+.buyAndSell .premium-down-form-box.opened {
+    scale: 1;
+    z-index: 9999;
+}
+
+.premium-down-form-box form {
+    width: 100%;
+    border-top: 1px solid #000;
+    margin-top: 1rem;
+    padding: 0 5rem;
+}
+
+.premium-down-form-box .form-box form label {
+    font-size: 1.6rem;
+    color: #333333;
+    font-weight: 600;
+}
+
+.premium-down-form-box form input,
+.premium-down-form-box form select {
+    border: .1rem solid #000000;
+    outline: none;
+    font-size: 1.6rem;
+    color: #000000;
+    padding: .7rem 1rem;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.premium-down-form-box form input[type="checkbox"] {
+    width: auto;
+}
+
+.premium-down-form-box form .submit-box {
+    position: relative;
+}
+
+.premium-down-form-box form .submit-box input {
+    width: auto;
+    background: #ff0000;
+    margin-top: 1rem;
+    cursor: pointer;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.premium-down-form-box form .submit-box input:hover {
+    background: #df1313;
+}
+
+.premium-down-form-box form .submit-box input:active {
+    background: #ff0000;
+}
+
+.premium-down-form-box form .submit-box #submitBtn {
+    font-size: 1.6rem;
+    padding: .7rem 2rem;
+    margin-left: 1rem;
+    background: #00ffff;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    cursor: pointer;
+    outline: none;
+    border: .1rem solid #000000;
+}
+
+.premium-down-form-box form .submit-box #submitBtn:hover {
+    background: #00e4e4;
+}
+
+.premium-down-form-box form .submit-box #submitBtn:active {
+    background: #00ffff;
+}
+
+::-webkit-input-placeholder {
+    text-transform: capitalize;
+}
+
+::-moz-placeholder {
+    text-transform: capitalize;
+}
+
+:-ms-input-placeholder {
+    text-transform: capitalize;
+}
+
+::-ms-input-placeholder {
+    text-transform: capitalize;
+}
+
+::placeholder {
+    text-transform: capitalize;
+}
+
+.premium-down-form-box .form-box form .little-description {
+    color: #333333;
+    font-size: 1.6rem;
+    width: 100%;
+    display: none;
+}
+
+.premium-down-form-box .form-box form .little-description.active {
+    display: block;
+}
+
+.premium-down-form-box .form-box form .input-flex-box {
+    width:100%;
+    margin-top: 1rem;
+}
+
+#passwordError {
+    color: #ff0000;
+    font-size: 1.4rem;
+    margin-top: .5rem;
+  }
+
+  .form-box form .condition-box {
+    margin-top: 2rem;
+}
+
+.form-box form .condition-box .condition {
+    font-size: 1.2rem;
+    margin: 1rem 0 0 1rem;
+    display: none;
+}
+
+.form-box form .condition-box .condition.active {
+    display: inline;
+}
+
+/* max width 1200px */
+@media only screen and (max-width: 1200px) {
+    /* downloa my work template | IBRAHIM */
+    .download-button-side .down button {
+        width: 20rem;
+    }
+    .download-button-side .down button span {
+        font-size: 1.6rem;
+    }
+
+    .download-button-side .btn-buyPremium span {
+        font-size: 1.6rem;
+    }
+}
+
+/* max width 1024px */
+@media only screen and (max-width: 1024px) {
+    /* downloa my work template | IBRAHIM */
+    .download-button-side .down button {
+        width: 18rem;
+    }
+}
+
+/* max width 980px */
+@media only screen and (max-width: 980px) {
+    .download-button-side .down button {
+        width: 17rem;
+    }
+    .download-button-side .down button span {
+        font-size: 1.4rem;
+    }
+
+    .download-button-side .btn-buyPremium span {
+        font-size: 1.5rem;
+    }
+}
+
+/* max width 768px */
+@media only screen and (max-width: 768px) {
+    .download-button-side .flex-button-myWork {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .download-button-side .down button {
+        width: 25rem;
+    }
+    .download-button-side .down button span {
+        font-size: 1.9rem;
+    }
+
+    .download-button-side .btn-buyPremium span {
+        font-size: 1.9rem;
+    }
+
+    .buyAndSell .little-description {
+        width: 100%;
+    }
+
+    .premium-down-form-box .form-box {
+        width: 70%;
+    }
+
+    .buyAndSell .png-web-temp-box {
+        height: 55vh;
+    }
+}
+
+/* max width 480px  */ 
+@media only screen and (max-width: 480px) {
+    .buyAndSell .png-web-temp-box {
+        height: 24vh;
+    }
+
+    .premium-down-form-box form input,
+    .premium-down-form-box form select {
+        width: 100%;
+    }
+}
+
+.submit-box .loading-animation {
+    display: none;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+    position: absolute;
+    top: 1.7rem;
+    left: 18rem;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
