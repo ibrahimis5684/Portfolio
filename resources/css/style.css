@@ -10,17 +10,26 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html{
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
+:root{
+    --body-color: #000000;
+    --body-text-color: #ffffff;
+    --lite-text-color:#ababab;
+    --theme-color: #00ffff;
+    --btn-hover-color:#333333;
+    --skill-bar-color:#dadada;
+    --transparent-bg-color: #ffffff69;
+}
 
 body{
-    background: #080808;
-    color: #fff;
+    background: var(--body-color);
+    color: var(--body-text-color);
 }
 
 body::-webkit-scrollbar {
@@ -29,7 +38,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #808080;
+    background: var(--transparent-bg-color);
     border-radius: .6rem;
     -webkit-border-radius: .6rem;
     -moz-border-radius: .6rem;
@@ -45,11 +54,11 @@ body::-webkit-scrollbar-thumb {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    border: .1rem solid #00ffff;
+    border: .1rem solid var(--theme-color);
     padding: 1.4rem 5rem;
     border-radius: .6rem;
     text-decoration: none;
-    color: #fff;
+    color: var(--body-text-color);
     transition: background 0.5s, color 0.5s;
     -webkit-transition: background 0.5s, color 0.5s;
     -moz-transition: background 0.5s, color 0.5s;
@@ -59,11 +68,11 @@ body::-webkit-scrollbar-thumb {
     -moz-border-radius: .6rem;
     -ms-border-radius: .6rem;
     -o-border-radius: .6rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 .btn:hover{
-    background: #00ffff;
-    color: #333;
+    background: var(--theme-color);
+    color: var(--btn-hover-color);
 }
 
 p {
@@ -79,7 +88,7 @@ h1,
 h2  {
     font-size: 6rem;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--body-text-color);
 }
 
 h3 {
@@ -146,25 +155,24 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
     text-decoration: none;
     font-size: 1.8rem;
     position: relative;
     text-transform: capitalize;
-    background: #00ffff00;
     padding: .5rem .7rem;
     border-radius: .3rem;
     -webkit-border-radius: .3rem;
     -moz-border-radius: .3rem;
     -ms-border-radius: .3rem;
     -o-border-radius: .3rem;
+    color: var(--body-text-color);
 }
 
 nav ul li a::after{
     content: '';
     width: 0;
     height: .3rem;
-    background: #00ffff;
+    background: var(--theme-color);
     position: absolute;
     left: 0;
     bottom: -.6rem;
@@ -187,26 +195,44 @@ header .header-text{
 header .header-text h1{
     margin-top: 2rem;
 }
-
-header .header-text h1:nth-child(3) {
+header .header-text marquee {
+    width: 50%;
+}
+header .header-text marquee h1 {
     font-size: 2rem;
     font-weight: lighter;
     font-family: monospace;
 }
 
 header .header-text h1 span{
-    color: #00ffff;
+    color: var(--theme-color);
 }
 
 nav .menu-icon {
     display: none;
+}
+.project-box {
+    display: flex;
+    align-items: center;
+}
+.project-box .project-btn {
+    width: 20rem;
+    margin: 5rem 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+.project-box .project-btn:nth-child(2) {
+    margin-left: 5rem;
+    background: var(--theme-color);
+    border: none;
+    color: var(--btn-hover-color);
 }
 
 /*-------------about-----------*/
 
 #about{
     padding: 8rem 0;
-    color: #ababab;
+    color: var(--lite-text-color);
 }
 
 .row-box{
@@ -260,7 +286,7 @@ nav .menu-icon {
     content: '';
     width: 0;
     height: .3rem;
-    background: #00ffff;
+    background: var(--theme-color);
     position: absolute;
     left: 0;
     bottom: -.8rem;
@@ -282,7 +308,7 @@ nav .menu-icon {
 }
 
 .tab-contents ul li span{
-    color: #00ffff;
+    color: var(--theme-color);
     font-size: 1.4rem;
 }
 .tab-contents{
@@ -317,7 +343,7 @@ nav .menu-icon {
 
 .services-section .box ul li a {
     font-size: 1.9rem;
-    color: #ffffff;
+    color: var(--body-text-color);
     text-decoration: none;
     margin-left: 1rem;
     position: relative;
@@ -329,14 +355,14 @@ nav .menu-icon {
 }
 
 .services-section .box ul li a:hover {
-    color: #00ffff;
+    color: var(--theme-color);
 }
 
 .services-section .box ul li a::before {
     content: '';
     width: 0;
     height: .2rem;
-    background: #00ffff;
+    background: var(--theme-color);
     position: absolute;
     left: 0;
     bottom: -.2rem;
@@ -354,11 +380,11 @@ nav .menu-icon {
 .services-section .skillPercent {
     width: 20rem;
     height: 1.3rem;
-    background: #dadada;
+    background: var(--skill-bar-color);
     position: absolute;
     right: 5rem;
     text-align: center;
-    color: #080808;
+    color: var(--body-color);
     border-radius: .6rem;
     -webkit-border-radius: .6rem;
     -moz-border-radius: .6rem;
@@ -372,9 +398,9 @@ nav .menu-icon {
     content: '';
     width: 0;
     height: 1.3rem;
-    background: -webkit-gradient(linear, left top, right top, color-stop(0, #00ffff), to(#ffffff00));
-    background: -o-linear-gradient(left, #00ffff 0 90%, #ffffff00);
-    background: linear-gradient(to right, #00ffff 0 90%, #ffffff00);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, var(--theme-color)), to(#ffffff00));
+    background: -o-linear-gradient(left, var(--theme-color) 0 90%, #ffffff00);
+    background: linear-gradient(to right, var(--theme-color) 0 90%, #ffffff00);
     display: table;
     border-radius: .6rem;
     -webkit-border-radius: .6rem;
@@ -443,7 +469,7 @@ nav .menu-icon {
 .myWork-section .main-work-box {
     width: 100%;
     height: 23rem;
-    background: #585858;
+    background: transparent;
     border-radius: .9rem;
     -webkit-border-radius: .9rem;
     -moz-border-radius: .9rem;
@@ -490,9 +516,9 @@ nav .menu-icon {
 
 .work-button-box .work-btn {
     font-size: 2.5rem;
-    color: #ffffff;
+    color: var(--body-text-color);
     text-decoration: none;
-    background: #ffffff69;
+    background: var(--transparent-bg-color);
     padding: .5rem 3rem;
     border-radius: .3rem;
     -webkit-border-radius: .3rem;
@@ -509,8 +535,7 @@ nav .menu-icon {
 }
 
 .work-button-box .work-btn:hover {
-    color: #262626;
-    background: #ffffffab;
+    color: var(--btn-hover-color);
 }
 
 .myWork-section .main-work-box:hover .work-btn {
@@ -543,10 +568,10 @@ nav .menu-icon {
 
 .myWork-section .work-download-box .download-icon {
     font-size: 2rem;
-    color: #ffffff;
+    color: var(--body-text-color);
     width: 4.5rem;
     height: 3.5rem;
-    background: #ffffff69;
+    background: var(--transparent-bg-color);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -565,8 +590,7 @@ nav .menu-icon {
 }
 
 .myWork-section .work-download-box .download-icon:hover {
-    color: #262626;
-    background: #ffffffab;
+    color: var(--btn-hover-color);
 }
 
 .myWork-section .work-download-box:hover .download-menu {
@@ -579,7 +603,7 @@ nav .menu-icon {
 
 .myWork-section .work-download-box .download-menu {
     width: 14rem;
-    background: #ffffff69;
+    background: var(--transparent-bg-color);
     position: absolute;
     right: 0;
     padding: 1rem 0;
@@ -602,7 +626,7 @@ nav .menu-icon {
 
 .download-menu ul li a {
     font-size: 1.6rem;
-    color: #ffffff;
+    color: var(--body-text-color);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
@@ -616,8 +640,8 @@ nav .menu-icon {
 }
 
 .download-menu ul li a:hover {
-    color: #262626;
-    background: #ffffff;
+    color: var(--btn-hover-color);
+    background: var(--body-text-color);
 }
 
 /*---------------contact-----------*/
@@ -660,7 +684,7 @@ nav .menu-icon {
 }
 
 .contact-left .contact-icon {
-    color: #00ffff;
+    color: var(--theme-color);
 }
 
 .contact-section .social-icons{
@@ -670,7 +694,7 @@ nav .menu-icon {
     text-decoration: none;
     font-size: 3rem;
     margin-right: 1.5rem;
-    color: #ababab;
+    color: var(--lite-text-color);
     display: inline-block;
     transition: color ease 0.2s;
     -webkit-transition: color ease 0.2s;
@@ -679,12 +703,12 @@ nav .menu-icon {
     -o-transition: color ease 0.2s;
 }
 .contact-section .social-icons a .social-media:hover{
-    color: #00ffff;
+    color: var(--theme-color);
 }
 .contact-section .btn.btn2{
     display: inline-block;
-    background: #00ffff;
-    color: #333;
+    background: var(--theme-color);
+    color: var(--btn-hover-color);
     transition: none;
     -webkit-transition: none;
     -moz-transition: none;
@@ -694,7 +718,8 @@ nav .menu-icon {
 }
 
 .contact-section .btn.btn2:hover {
-    background: #00ffffe7;
+    background: var(--theme-color);
+    opacity: 90%;
 }
 
 .contact-section .contact-right{
@@ -704,10 +729,10 @@ nav .menu-icon {
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: var(--btn-hover-color);
     padding: 1.5rem;
     margin: 1.5rem 0;
-    color: #fff;
+    color: var(--body-text-color);
     border-radius: .6rem;
     -webkit-border-radius: .6rem;
     -moz-border-radius: .6rem;
@@ -725,7 +750,7 @@ nav .menu-icon {
     width: 100%;
     text-align: center;
     padding: 2.5rem 0;
-    background: #262626;
+    background: var(--btn-hover-color);
     font-weight: 300;
     margin-top: 2rem;
     font-size: 1.4rem;

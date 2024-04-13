@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBRAHIM</title>
+    <link rel="shortcut icon" href="resources/img/title-logo.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="../resources/css/responsiv.css">
+    <link rel="stylesheet" href="SmallProjectStyle.css">
+    <!-- vendors -->
+    <link rel="stylesheet" href="../vendors/css/grid.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="home">
+        <nav id="navbar">
+            <a href="../index.html#home"><img class="logo" src="../resources/img/logo.png" alt="ibrahim"></a>
+            <ul id="sidemenu">
+                <i onclick="closemenu()" class="menu-icon menu-close fa-solid fa-xmark"></i>
+                <li><a href="../index.html#home" onclick="changeColor(this)">home</a></li>
+                <li><a href="../index.html#about" onclick="changeColor(this)">about</a></li>
+                <li><a href="../index.html#services" onclick="changeColor(this)">services</a></li>
+                <li><a href="../index.html#myWork" onclick="changeColor(this)">My Work</a></li>
+                <li><a href="../index.html#contact" onclick="changeColor(this)">contact</a></li>
+            </ul>
+            <i onclick="openmenu()" class="menu-icon fa-solid fa-bars"></i>
+        </nav>
+    </header>
+    <!-- project section -->
+    <section class="project-section">
+        <div class="row">
+            <!-- project--01 -->
+            <div class="col span_1_of_4 project-box">
+                <div class="main-project-box">
+                    <div class="thumb-box">
+                        <img src="../resources/img/ageCalculator.png" alt="ageCalculator">
+                    </div>
+                    <div class="title-box">
+                        <h3>age calculator 📱</h3>
+                            <p class="little-coment">
+                                use these tools to find out the corrent date of birth.
+                            </p>
+                    </div>
+                    <div class="button-box">
+                        <a href="age calculator/index.html" class="view-btn">visit</a>
+                        <a href="#" class="view-btn" style="cursor: no-drop;">get code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- project--02 -->
+            <div class="col span_1_of_4 project-box">
+                <div class="main-project-box">
+                    <div class="thumb-box">
+                        <img src="../resources/img/lovePredictionSystem.png" alt="lovePredictionSystem">
+                    </div>
+                    <div class="title-box">
+                        <h3>Love Prediction System</h3>
+                            <p class="little-coment">
+                                this tool can be used to determine the love precentage of a couple.
+                            </p>
+                    </div>
+                    <div class="button-box">
+                        <a href="Love Prediction System/index.html" class="view-btn">visit</a>
+                        <a href="#" class="view-btn" style="cursor: no-drop";>get code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+        <div class="copyright">
+            <p>2023 Copyright &copy; Ibrahim.</p>
+            <abbr title="last update 11-04-2024"><p>v 3.0.0</p></abbr>
+        </div>
+    </footer>
+
+    <!-- javascript -->
+    <script src="../resources/js/script.js"></script>
+    <script src="../vendors/js/html5shiv-printshiv.min.js"></script>
+    <script src="../vendors/js/respond.min.js"></script>
+</body>
+</html>
