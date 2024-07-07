@@ -1,0 +1,133 @@
+/* max-width 1200 */
+@media only screen and (max-width:1200px) {
+    .top-nav-box {
+        padding: 0 6%;
+    }
+    header nav {
+        padding: 1.6rem 6%;
+    }
+    .parch-img img {
+        width: 30rem;
+    }
+    .contact-section .information-box .little-desc{
+        width: 36.9rem;
+    }
+}
+/* max-width 1024 */
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 58.5%;
+    }
+    .top-nav-box {
+        padding: 0 5%;
+    }
+    header nav {
+        padding: 1.6rem 5%;
+    }
+    .parch-img img {
+        width: 27rem;
+    }
+    .contact-section .information-box .little-desc{
+        width: 33.9rem;
+    }
+}
+/* max-width 980 */
+@media only screen and (max-width: 980px) {
+    .parch-img img {
+        width: 23rem;
+    }
+    .contact-section .row {
+        flex-direction: column;
+    }
+    .contact-section .qi-box {
+        width: 100%;
+    }
+    .contact-section .con-box {
+        width: 50%;
+        margin-top: 3rem;
+    }
+    .contact-section .row:nth-child(2) {
+        flex-direction: row;
+    }
+    .discount-section .row .discount-box h2 {
+        font-size: 3.8rem;
+    }
+}
+/* max-width 768 */
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 54.5%;
+    }
+    .top-nav .buttom-quick-links {
+        display: none;
+    }
+    .parch-img img {
+        width: 22rem;
+    }
+    .sub-col .text-box .parch-detail {
+        font-size: 1.5rem;
+    }
+    .sub-col .text-box h3 {
+        font-size: 2.8rem;
+    }
+    .discount-section .line {
+        display: none;
+    }
+    .discount-section .row .discount-box h1{
+        font-size: 6.1rem;
+    }
+    .discount-section .row .discount-box h2{
+        font-size: 3.3rem;
+    }
+    .btn {
+        font-size: 1.6rem;
+        padding: .8rem 2.8rem;
+    }
+    .top-nav .top-quick-links .top-nav-logo-box {
+        display: block;
+    }
+}
+/* max-width 480 */
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 52.5%;
+    }
+    header nav {
+        display: none;
+    }
+    .top-quick-links ul li {
+        margin-left: 3rem;
+    }
+    .parch-img img {
+        width: 14rem;
+    }
+    .sub-col .text-box .parch-detail {
+        font-size: 1rem;
+    }
+    .sub-col .text-box h3 {
+        font-size: 1.8rem;
+    }
+    .discount-section .row .discount-box h1{
+        font-size: 5.1rem;
+    }
+    .discount-section .row .discount-box h2{
+        font-size: 2.3rem;
+        margin-top: -3rem;
+    }
+    .btn {
+        font-size: 1.4rem;
+        padding: .7rem 2.8rem;
+    }
+    .contact-section .information-box .little-desc{
+        width: 100%;
+    }
+    .footer-section .content h4{
+        display: block;
+    }
+    .top-nav .top-quick-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}

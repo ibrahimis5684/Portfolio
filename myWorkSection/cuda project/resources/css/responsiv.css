@@ -1,0 +1,39 @@
+/*=========================================================================================================================*/
+    /*--skill animation--*/
+/*=========================================================================================================================*/
+
+@keyframes skill1 {
+    0% {
+        background: conic-gradient(from 0deg, #30bae7 0%, #dfe8ed 0%);
+    }
+    100% {
+        background: conic-gradient(from 0deg, #30bae7 90%, #dfe8ed 0%);
+    }
+}
+
+@keyframes skill2 {
+    0% {
+        background: conic-gradient(from 0deg, #d74680 0%, #dfe8ed 0%);
+    }
+    100% {
+        background: conic-gradient(from 0deg, #d74680 75%, #dfe8ed 0%);
+    }
+}
+
+@keyframes skill3 {
+    0% {
+        background: conic-gradient(from 0deg, #15c7a8 0%, #dfe8ed 0%);
+    }
+    100% {
+        background: conic-gradient(from 0deg, #15c7a8 70%, #dfe8ed 0%);
+    }
+}
+
+@keyframes skill4 {
+    0% {
+        background: conic-gradient(from 0deg, #eb7d4b 0%, #dfe8ed 0%);
+    }
+    100% {
+        background: conic-gradient(from 0deg, #eb7d4b 85%, #dfe8ed 0%);
+    }
+}

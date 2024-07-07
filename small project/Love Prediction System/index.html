@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Prediction System</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555555;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333333;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#loveResult {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #4CAF50;
+}
+.back-button {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.back-button a {
+    font-size: 1.8rem;
+    color: black;
+    padding: .5rem .7rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.back-button a:hover {
+    background-color: #00ffff;
+}
+.back-button a:active {
+    background-color: #00ecec;
+}
+
+  </style>
+</head>
+<body>
+  <div class="back-button">
+    <a href="../smallProject.html">
+        <i class="fa-solid fa-arrow-right fa-flip-horizontal"></i>
+    </a>
+</div>
+  <div class="container">
+    <h1>Love Prediction System</h1>
+    <div class="form-group">
+      <label for="boyfriendName">Boyfriend's 👦 Name:</label>
+      <input type="text" id="boyfriendName" placeholder="Enter boyfriend's name">
+    </div>
+    <div class="form-group">
+      <label for="boyfriendAge">Boyfriend's 👦 Age:</label>
+      <input type="number" id="boyfriendAge" placeholder="Enter boyfriend's age">
+    </div>
+    <div class="form-group">
+      <label for="girlfriendName">Girlfriend's 👧 Name:</label>
+      <input type="text" id="girlfriendName" placeholder="Enter girlfriend's name">
+    </div>
+    <div class="form-group">
+      <label for="girlfriendAge">Girlfriend's 👧 Age:</label>
+      <input type="number" id="girlfriendAge" placeholder="Enter girlfriend's age">
+    </div>
+    <button onclick="calculateLove()">Calculate Love ❤</button>
+    <div id="loveResult"></div>
+  </div>
+
+  <script>
+    function calculateLove() {
+      var boyfriendName = document.getElementById('boyfriendName').value.trim();
+      var boyfriendAge = parseInt(document.getElementById('boyfriendAge').value.trim());
+      var girlfriendName = document.getElementById('girlfriendName').value.trim();
+      var girlfriendAge = parseInt(document.getElementById('girlfriendAge').value.trim());
+
+      if (!boyfriendName || !boyfriendAge || !girlfriendName || !girlfriendAge) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      // Calculate love percentage (simple algorithm for demonstration)
+      var lovePercentage = (boyfriendName.length + girlfriendName.length) * (boyfriendAge + girlfriendAge) % 101;
+
+      var resultText = "Love Percentage between " + boyfriendName + " and " + girlfriendName + ": " + lovePercentage + "% ❤";
+      
+      document.getElementById('loveResult').innerText = resultText;
+    }
+  </script>
+</body>
+</html>
